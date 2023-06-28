@@ -142,16 +142,14 @@ function ThemeContext({children}) {
                           }else{
                         WorkCom.current[index].style = 'text-decoration: none';
                           }
-                      
-         
                 })
     }
 
 
     function ClickDelete(index, number){
 
-        CheckCom.current.forEach( (check) => {
-            if (check.checked) {
+       
+            if (CheckCom.current[number].checked) {
                 const newItems = [...index]; 
                 console.log(newItems);
                 newItems.splice(number, 1); 
@@ -161,8 +159,7 @@ function ThemeContext({children}) {
                 console.log(number);
 
             }
-        })
-
+      
         
     }
 
