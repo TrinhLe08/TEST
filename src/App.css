@@ -20,7 +20,7 @@ body {
   display: flex;
 }
 #root .App .Main .menu .button {
-  width: 50px;
+  width: 51px;
   text-align: center;
   margin-left: 40px;
   border: none;
