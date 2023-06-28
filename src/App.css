@@ -1,38 +1,116 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root .App .Main {
+  text-align: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#root .App .Main h1 {
+  color: blue;
+  margin: 20px 0 20px 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root .App .Main .menu {
+  border-bottom: 0.5px solid black;
+  width: 340px;
+  margin-left: 40%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+#root .App .Main .menu .button {
+  width: 50px;
+  text-align: center;
+  margin-left: 40px;
+  border: none;
+  background-color: white;
+  padding-right: 2px;
+  padding-bottom: 10px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+#root .App .Main .BigBoss {
+  display: flex;
+  justify-content: center;
+  padding-left: 130px;
+}
+#root .App .Main .BigBoss .Boss {
+  width: 500px;
+  overflow: hidden;
+}
+#root .App .Main .BigBoss .Boss .todo {
+  text-align: center;
+  width: 1500px;
+  display: flex;
+}
+#root .App .Main .BigBoss .Boss .todo .Sub {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+#root .App .Main .BigBoss .Boss .todo .all {
+  width: 500px;
+}
+#root .App .Main .BigBoss .Boss .todo .all .search {
+  display: flex;
+}
+#root .App .Main .BigBoss .Boss .todo .all .search .text {
+  width: 260px;
+  height: 30px;
+  margin-left: 40px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+#root .App .Main .BigBoss .Boss .todo .all .search .add {
+  width: 500px;
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: blue;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+#root .App .Main .BigBoss .Boss .todo .active {
+  width: 500px;
+  margin-top: 0px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#root .App .Main .BigBoss .Boss .todo .active .search1 {
+  display: flex;
+}
+#root .App .Main .BigBoss .Boss .todo .active .search1 .text1 {
+  width: 260px;
+  height: 30px;
+  margin-left: 40px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+#root .App .Main .BigBoss .Boss .todo .active .search1 .add1 {
+  width: 500px;
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: blue;
+  color: white;
+}
+#root .App .Main .BigBoss .Boss .todo .com {
+  width: 500px;
+}
+#root .App .Main .BigBoss .Boss .todo .com .deleteButton {
+  background-color: red;
+  border: none;
+  color: white;
+  width: 70px;
+  height: 30px;
+  border-radius: 7px;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+#root .App .Main .BigBoss .Boss .todo .com .delete {
+  margin-left: 200px;
 }
